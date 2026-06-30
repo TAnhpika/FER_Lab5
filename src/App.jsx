@@ -10,6 +10,7 @@ import "./App.css";
 function App() {
     return (
         <BrowserRouter>
+            <div className="app">
             <Navbar />
             <div className="container">
                 <Routes>
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/quizzes" element={<Quiz />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+            </div>
             </div>
         </BrowserRouter>
     );

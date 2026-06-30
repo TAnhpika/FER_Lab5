@@ -17,14 +17,16 @@ const categories = [
 
 function Home() {
     return (
-        <div>
-            <Carousel>
-                {slides.map((src, index) => (
-                    <Carousel.Item key={index}>
-                        <img className="d-block w-100" src={src} alt={`Slide ${index + 1}`} />
-                    </Carousel.Item>
-                ))}
-            </Carousel>{" "}
+        <div className="home-page">
+            <div className="home-carousel">
+                <Carousel>
+                    {slides.map((src, index) => (
+                        <Carousel.Item key={index}>
+                            <img className="d-block w-100" src={src} alt={`Slide ${index + 1}`} />
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            </div>
             <div className="category-row">
                 {categories.map((src, index) => (
                     <img key={index} src={src} alt="" className="category-img" />

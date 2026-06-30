@@ -16,7 +16,8 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact-page">
+      <h1 className="page-title">Contact</h1>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="firstName">
